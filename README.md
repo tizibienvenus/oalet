@@ -9,8 +9,16 @@ OALET est une application de portefeuille financier qui permet aux utilisateurs 
 - Le suivi des dépenses et des revenus ✅
 - La budgétisation
 
+## UI & THEME
 
-<img width="861" alt="OALET" src="https://github.com/tizibienvenus/oalet/blob/master/oalet.png">
+### Light Theme
+
+<img width="861" alt="OALET" src="https://github.com/tizibienvenus/oalet/blob/main/OALETLIGHT.png">
+
+
+### Light Theme
+
+<img width="861" alt="OALET" src="https://github.com/tizibienvenus/oalet/blob/main/OALETDARK.png">
 
 ### We allons nous focaliser sur:
 
@@ -19,13 +27,11 @@ OALET est une application de portefeuille financier qui permet aux utilisateurs 
 - Using Gorouter API or Navigator 2.0.
 - Using Firebase as a service.
 
-<<<<<<< HEAD
-
 
 ```bash
   flutter pub get
   flutter run
-    select between {1 'for system', 2 'for Chrome', 3 'for Edge'}
+    select between {1 'for using default system emulator', 2 'for Chrome', 3 'for Edge'}
 ```
 ### Tu peux aussi exécuter le projet sur ton téléphone physique ou un Emulateur.
 
@@ -34,8 +40,6 @@ OALET est une application de portefeuille financier qui permet aux utilisateurs 
 **SDK**: Flutter
 
 **BD**: Firebase,
-
-<<<<<<< **API**: Agora SDK, Gmail
 
 **Architecture**: MVC
 
