@@ -6,17 +6,41 @@ class Welcomescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xFF000000),
-        onPressed: () {  },
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-          child: Container(
-            color: Color(0xFF25FF45),
+      floatingActionButton: Container(
+          padding: const EdgeInsets.only(left: 40, right: 5),
+            width: MediaQuery.of(context).size.width,
+            height: 50,
+              child: InkWell(
+                onTap: (){
+                  print("object");
+                },
+                child: Container(
+                  width: 100,
+                  decoration: BoxDecoration(
+                      color: Color(0xFF000000),
+                      borderRadius: BorderRadius.circular(30)
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                          "Get Started",
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 18,
+                          ),
+                      ),
+                      SizedBox(width: 10,),
+                      Icon(
+                          Icons.east,
+                          color: Color(0xFFFFFFFF),
+                      )
+                    ],
+                  ),
 
-          ),
-        ),
-      ),
+                ),
+              ),
+            ),
       backgroundColor: Colors.white,
       body: Column(
             children: [
@@ -52,7 +76,7 @@ class Welcomescreen extends StatelessWidget {
                       "Easy ways \nto manage \nyour \nfinances",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
-                        fontSize: 70,
+                        fontSize: 65,
                         letterSpacing: 0,
                       ),
                       textAlign: TextAlign.left,
@@ -69,10 +93,13 @@ class Welcomescreen extends StatelessWidget {
                           ),
                         )
                     ),
-                    Container(
-                      height: 20,
-                      color: Color(0xFF000000),
+                    Positioned(
+                      bottom: 50,
+                      child: Container(
+                        height: 20,
+                        color: Color(0xFF000000),
 
+                      ),
                     ),
                   ],
                 ),
