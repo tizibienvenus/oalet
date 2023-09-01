@@ -2,11 +2,18 @@
 class Assets {
   Assets._();
 
-  static const String svgCircle = 'assets/svg/circle.svg';
-  static const String svgEtoile big = 'assets/svg/Etoile big.svg';
-  static const String svgEtoile small = 'assets/svg/Etoile small.svg';
-  static const String svgHead = 'assets/svg/Head.svg';
-  static const String svgLocosansnom = 'assets/svg/Locosansnom.svg';
+  static const String assetsSvgCircle = 'assets/svg/circle.png';
+  static const String assetsSvgEtoilebig = 'assets/svg/Etoile big.svg';
+  static const String assetsSvgEtoilesmall = 'assets/svg/Etoile small.svg';
+  static const String assetsSvgHead = 'assets/svg/Head.svg';
+  static const String assetsSvgLogosansnom = 'assets/svg/Logosansnom.svg';
+  static const String svgCircle = 'assets/svg/circle.png';
+  static const String svgEtoilebig = 'assets/svg/Etoile big.png';
+  static const String svgEtoilesmall = 'assets/svg/Etoile small.png';
+  static const String svgHead = 'assets/svg/Head.png';
+  static const String svgLogosansnom = 'assets/svg/Logosansnom.png';
   static const String svgPuce = 'assets/svg/puce.svg';
+  static const String SmallEtoile = 'assets/svg/Etoile small.png';
+  static const String BigEtoile = "assets/svg/Etoile big.png";
 
 }
