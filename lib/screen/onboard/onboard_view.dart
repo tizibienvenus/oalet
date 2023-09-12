@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:oalet/generated/assets.dart';
+import 'package:oalet/screen/homepage/homescreen.dart';
 
 class Welcomescreen extends StatelessWidget {
   @override
@@ -12,7 +13,8 @@ class Welcomescreen extends StatelessWidget {
             height: 50,
               child: InkWell(
                 onTap: (){
-                  print("object");
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>HomeScreen()));
                 },
                 child: Container(
                   width: 100,
@@ -41,7 +43,7 @@ class Welcomescreen extends StatelessWidget {
                 ),
               ),
             ),
-      backgroundColor: Colors.white,
+     // backgroundColor: Colors.white,
       body: Column(
             children: [
               Row(
@@ -88,7 +90,7 @@ class Welcomescreen extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.only(right: 40, left: 0, bottom: 20, top: 50),
                           child: Image.asset(
-                              Assets.BigEtoile,
+                              Assets.svgEtoilebig,
                             width: 50,
                           ),
                         )
