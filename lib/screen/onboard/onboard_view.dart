@@ -63,7 +63,7 @@ class Welcomescreen extends StatelessWidget {
                         //right: 0,
                           left: 0,
                           bottom: 0,
-                          child: Image.asset(Assets.assetsSvgCircle)
+                          child: Image.asset(Assets.svgCircle)
                       )
                     ],
                   ),

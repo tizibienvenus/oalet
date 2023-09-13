@@ -2,7 +2,7 @@
 class Assets {
   Assets._();
 
-  static const String assetsSvgCircle = 'assets/svg/circle.png';
+  static const String assetsSvgCircle = 'assets/svg/circle.svg';
   static const String assetsSvgEtoilebig = 'assets/svg/Etoile big.svg';
   static const String assetsSvgEtoilesmall = 'assets/svg/Etoile small.svg';
   static const String assetsSvgHead = 'assets/svg/Head.svg';
@@ -14,6 +14,7 @@ class Assets {
   static const String svgHeadCard = 'assets/svg/Head_card.svg';
   static const String svgLogosansnom = 'assets/svg/Logosansnom.png';
   static const String svgPuce = 'assets/svg/puce.svg';
+  static const String svgQrcode = 'assets/svg/qrcode.png';
   static const String svgUse3 = 'assets/svg/use3.png';
   static const String svgUser1 = 'assets/svg/user1.png';
   static const String svgUser2 = 'assets/svg/user2.png';

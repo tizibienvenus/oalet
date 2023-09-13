@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:oalet/generated/assets.dart';
+import 'package:oalet/screen/chart/chart_screen.dart';
 import 'package:oalet/screen/homepage/components/home_body.dart';
+import 'package:oalet/screen/profile/profile_screen.dart';
+import 'package:oalet/screen/qr_scanner/qr_code_scanner_screen.dart';
+import 'package:oalet/screen/wallet/wallet_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,25 +13,37 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _ChatsScreenState extends State<HomeScreen> {
-  int _selectedIndex = 1;
+  List pages = [
+    const HomeBodyScreen(),
+    const WalletScreen(),
+    const QrCodeScannerScreen(),
+    const ChartScreen(),
+    const ProfileScreen(),
+  ];
+
+  int CurrentIndex = 0;
+  void onTape(int index){
+    setState(() {
+      CurrentIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: buildAppBar(),
       bottomNavigationBar: buildBottomNavigationBar(),
-      body: HomeBodyScreen(),
+      body: pages[CurrentIndex],
     );
   }
   BottomNavigationBar buildBottomNavigationBar() {
     return BottomNavigationBar(
       showSelectedLabels: false,
       showUnselectedLabels: false,
+      currentIndex: CurrentIndex,
       type: BottomNavigationBarType.fixed,
-      currentIndex: _selectedIndex,
       onTap: (value) {
         setState(() {
-          _selectedIndex = value;
+          CurrentIndex = value;
         });
       },
       items:  [
@@ -50,35 +64,13 @@ class _ChatsScreenState extends State<HomeScreen> {
         ),
         const BottomNavigationBarItem(icon: Icon(Icons.pie_chart), label: "Chart"),
         const BottomNavigationBarItem(
-          icon:Icon(Icons.person),
+          icon: Icon(Icons.person),
+          activeIcon:  Icon(Icons.person_rounded),
           label: "Profile",
         ),
       ],
     );
   }
-  /*BottomNavigationBar buildBottomNavigationBar() {
-    return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      currentIndex: _selectedIndex,
-      onTap: (value) {
-        setState(() {
-          _selectedIndex = value;
-        });
-      },
-      items: [
-        BottomNavigationBarItem(icon: Icon(Icons.messenger), label: "Chats"),
-        BottomNavigationBarItem(icon: Icon(Icons.people), label: "People"),
-        BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
-        BottomNavigationBarItem(
-          icon: CircleAvatar(
-            radius: 14,
-            backgroundImage: AssetImage(Assets.svgUser1),
-          ),
-          label: "Profile",
-        ),
-      ],
-    );
-  }*/
 
   /*AppBar buildAppBar() {
     return AppBar(
