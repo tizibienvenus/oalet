@@ -20,6 +20,17 @@ OALET est une application de portefeuille financier qui permet aux utilisateurs 
 
 <img width="861" alt="OALET" src="https://github.com/tizibienvenus/oalet/blob/main/OALETDARK.png">
 
+## Screenshop On App Conding
+
+### OnBoard Screen
+
+<img width="861" alt="OALET" src="https://github.com/tizibienvenus/oalet/blob/main/oalet2.png">
+
+
+### Home Screen
+
+<img width="861" alt="OALET" src="https://github.com/tizibienvenus/oalet/blob/main/oalet1.png">
+
 ### We allons nous focaliser sur:
 
 - Un UI top, simple et intuitive.

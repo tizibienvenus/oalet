@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65px" height="80px" viewBox="0 0 65 80" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M557 345L557 345L557 425L492 425L492 345L557 345Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Frame" clip-path="url(#clip_1)">
+    <path d="M557 345L557 345L557 425L492 425L492 345L557 345Z" id="Frame" fill="none" stroke="none" />
+    <path d="M0 40C17.7467 40 32.1333 22.0914 32.1333 0C32.1333 22.0914 46.5199 40 64.2667 40C46.5199 40 32.1333 57.9086 32.1333 80C32.1333 57.9086 17.7467 40 0 40L0 40Z" id="Vector" fill="#131313" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

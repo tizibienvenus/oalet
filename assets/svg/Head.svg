@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="160px" height="126px" viewBox="0 0 160 126" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M652 345L652 345L652 471L492 471L492 345L652 345Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Frame" clip-path="url(#clip_1)">
+    <path d="M652 345L652 345L652 471L492 471L492 345L652 345Z" id="Frame" fill="none" stroke="none" />
+    <path d="M0.903198 12.1936C0.903198 -17.7367 25.1665 -42 55.0967 -42C85.027 -42 109.29 -17.7367 109.29 12.1936L109.29 66.387L55.0967 66.387C25.1664 66.387 0.903198 42.1238 0.903198 12.1936L0.903198 12.1936Z" id="Vector" fill="#A7FED9" fill-rule="evenodd" stroke="none" />
+    <path d="M196 30.2581C196 10.3045 179.824 -5.87097 159.871 -5.87097C139.917 -5.87097 123.742 10.3045 123.742 30.2581L123.742 66.3871L159.871 66.3871C179.824 66.3871 196 50.2116 196 30.2581L196 30.2581Z" id="Vector" fill="#EBB2FF" fill-rule="evenodd" stroke="none" />
+    <path d="M67.742 105.226C67.742 116.699 77.0429 126 88.5162 126C99.9895 126 109.29 116.699 109.29 105.226L109.29 84.4516L88.5162 84.4516C77.0429 84.4516 67.742 93.7525 67.742 105.226L67.742 105.226Z" id="Vector" fill="#131313" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

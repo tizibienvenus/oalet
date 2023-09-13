@@ -12,6 +12,15 @@ ThemeData lighThemeData(BuildContext context) {
         primary: kPrimaryColor,
         secondary: kSecondaryColor,
         error: kErrorColor,
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          primary: kPrimaryColor,
+          minimumSize: const Size(double.infinity, 56),
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20))
+          )
+        )
       )
   );
 }
