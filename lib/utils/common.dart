@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-void fodaPrint(dynamic value) {
+void OaletPrint(dynamic value) {
   debugPrint(value.toString());
 }

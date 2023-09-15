@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 //const kPrimaryColor = Color(0xFF0146DC);
-const kPrimaryColor = Color(0xFFFF0FFF);
+const kPrimaryColor = Color(0xFFA7FED9);
 const kSecondaryColor = Color(0xFFFE9901);
 const kContentColorLightTheme = Color(0xFF000000);
 const kContentColorDarkTheme = Color(0xFFF5FCF9);
 const kWarninngColor = Color(0xFFF3BB1C);
 const kErrorColor = Color(0xFFF03738);
-
+const kBackgroundColor = Color(0xFF000000);
+const kOrangeColor = Color(0xffE59252);
+const kGreyColor = Color.fromARGB(255, 230, 230, 230);
 
 const kDefaultPadding = 20.0;
 //const kPrimaryColor = Color(0xFF366CF6);

@@ -8,11 +8,8 @@ class QrCodeScannerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      body: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(width: kDefaultPadding * 0.5,),
@@ -43,15 +40,14 @@ class QrCodeScannerScreen extends StatelessWidget {
                   onTap: (){
                     print("Scan Qr Button");
                   },
-                  child: InkWell(
-
-                    child: Container(
+                  child: Container(
                       //width: 100,
                       padding: const EdgeInsets.only(left: 40, right: 5),
+                      margin: const EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding),
                       width: MediaQuery.of(context).size.width,
                       height: 50,
                       decoration: BoxDecoration(
-                          color: const Color(0xFF000000),
+                          color: kPrimaryColor,
                           borderRadius: BorderRadius.circular(kDefaultPadding * 0.5)
                       ),
                       child: const Row(
@@ -60,25 +56,23 @@ class QrCodeScannerScreen extends StatelessWidget {
 
                           Icon(
                             Icons.document_scanner_sharp,
-                            color: Color(0xFFFFFFFF),
+                            color: Colors.black,
                           ),
-                          SizedBox(width: kDefaultPadding * 0.5,),
+                           SizedBox(width: kDefaultPadding * 0.3,),
                           Text(
                             "Scan",
                             style: TextStyle(
-                              color: Color(0xFFFFFFFF),
+                              color: Colors.black,
                               fontSize: 18,
                             ),
                           ),
+                          SizedBox(width: kDefaultPadding * 1,),
                         ],
                       ),
                     ),
-                  ),
                 )
               ],
               )
-        ),
-      ),
     );
   }
 
