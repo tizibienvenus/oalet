@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:oalet/constant/constants.dart';
 import 'package:oalet/generated/assets.dart';
 import 'package:oalet/models/paiement_history.dart';

@@ -49,8 +49,10 @@ class Welcomescreen extends StatelessWidget {
               Row(
                 children: [
                   const SizedBox(width: 20,),
+                  //SvgPicture.asset("assets/svg/Etoile big.svg"),
                   Image.asset("assets/svg/Etoile big.png"),
                   Spacer(),
+                  //SvgPicture.asset("assets/svg/Head.svg"),
                   Image.asset("assets/svg/Head.png"),
                 ],
               ),
