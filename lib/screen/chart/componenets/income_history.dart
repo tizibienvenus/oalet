@@ -13,15 +13,16 @@ class IncomeHistoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2.5 ),
-      child: InkWell(
+    //return //Padding(
+      //padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2.5 ),
+    return InkWell(
         onTap: (){
           print("user ${hystory.reasonIncome} History Button");
         },
         child: Container(
           width: 170,
           height: 160,
+          margin: const EdgeInsets.only(left: kDefaultPadding / 1, right: kDefaultPadding / 2.5, bottom: kDefaultPadding),
           padding: const EdgeInsets.all(kDefaultPadding),
           decoration: BoxDecoration(
               color: hystory.color,
@@ -78,8 +79,8 @@ class IncomeHistoryCard extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
+   // );
   }
 
 }

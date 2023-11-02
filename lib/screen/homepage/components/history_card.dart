@@ -14,7 +14,7 @@ class HistoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4 ),
+      padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 4, horizontal: kDefaultPadding),
       child: InkWell(
         onTap: (){
           print("user ${hystory.receiver} History Button");
@@ -49,8 +49,8 @@ class HistoryCard extends StatelessWidget {
                           hystory.receiver,
                           style: Theme.of(context)
                               .textTheme
-                              .titleSmall!
-                              .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+                              .headlineSmall!
+                              .copyWith(fontWeight: FontWeight.w400, //fontSize: 27, color: Color(0xFFFFFFFF).withOpacity(0.8),
                           ),
                         ),
                         Text(
@@ -58,7 +58,7 @@ class HistoryCard extends StatelessWidget {
                             style: Theme.of(context)
                                 .textTheme
                                 .titleLarge!
-                                .copyWith(fontWeight: FontWeight.w300, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+                                .copyWith(fontWeight: FontWeight.w300, //fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
                             ),
                           )
                       ],
@@ -70,8 +70,8 @@ class HistoryCard extends StatelessWidget {
                         "-\$${hystory.sendedAmount.toString()}.00",
                         style: Theme.of(context)
                             .textTheme
-                            .titleSmall!
-                            .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+                            .headline6!
+                            .copyWith(fontWeight: FontWeight.w400, //fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
                         ),
                       ),
                     ),

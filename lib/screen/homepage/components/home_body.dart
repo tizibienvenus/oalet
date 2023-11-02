@@ -15,18 +15,17 @@ class HomeBodyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-        child: SingleChildScrollView(
+      body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: kDefaultPadding * 2.5,),
               Container(
+                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding / 2),
                 decoration: BoxDecoration(
                     //color: const Color(0xFFF5F5F5),
-                    borderRadius: BorderRadius.circular(kDefaultPadding / 2)
+                borderRadius: BorderRadius.circular(kDefaultPadding / 2)
                 ),
                 child: Row(
                   //mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -53,8 +52,8 @@ class HomeBodyScreen extends StatelessWidget {
                                 'Hello Tizi',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .titleSmall!
-                                    .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+                                    .titleMedium!
+                                    .copyWith(fontWeight: FontWeight.w400, /*fontSize: 27,*/// color: Color(0xFFFFFFFF).withOpacity(0.8),
                                 ),
                               ),
                               Text(
@@ -62,7 +61,7 @@ class HomeBodyScreen extends StatelessWidget {
                                 style: Theme.of(context)
                                     .textTheme
                                     .titleLarge!
-                                    .copyWith(fontWeight: FontWeight.w300, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+                                    .copyWith(fontWeight: FontWeight.w300, /*fontSize: 27,*/// color: Color(0xFFFFFFFF).withOpacity(0.8),
                                 ),
                               )
                             ],
@@ -106,37 +105,40 @@ class HomeBodyScreen extends StatelessWidget {
               const SizedBox(height: 20,),
               ServiceCard(),
               const SizedBox(height: 20,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Sent to",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headlineSmall!
-                        .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Sent to",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall!
+                          .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
+                      ),
                     ),
-                  ),
-                  InkWell(
-                    onTap: (){
-                      print("View All Button");
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          "View All",
-                          style: Theme.of(context)
-                              .textTheme
-                              .headlineSmall!
-                              .copyWith(fontWeight: FontWeight.w400, fontSize: 20, //color: Color(0xFFFFFFFF).withOpacity(0.8),
+                    InkWell(
+                      onTap: (){
+                        print("View All Button");
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "View All",
+                            style: Theme.of(context)
+                                .textTheme
+                                .headlineSmall!
+                                .copyWith(fontWeight: FontWeight.w400, fontSize: 20, //color: Color(0xFFFFFFFF).withOpacity(0.8),
+                            ),
                           ),
-                        ),
-                        const Icon(Icons.arrow_forward_ios, size: 15,)
-                      ],
+                          const Icon(Icons.arrow_forward_ios, size: 15,)
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
               const SizedBox(height: 20,),
               SingleChildScrollView(
@@ -153,51 +155,54 @@ class HomeBodyScreen extends StatelessWidget {
     ),
               ),
               const SizedBox(height: kDefaultPadding,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Activities",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headlineSmall!
-                        .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
-                    ),
-                  ),
-                  InkWell(
-                    onTap: (){
-                      print("View All Button");
-                    },
-                    child: Container(
-                      padding: EdgeInsets.all(8),
-                      //margin: EdgeInsets.symmetric(horizontal: kDefaultPadding / 2, ),
-                      //width: 65,
-                      //height: 65,
-                      decoration: BoxDecoration(
-                          color: const Color(0xFFF5F5F5),
-                          borderRadius: BorderRadius.circular(kDefaultPadding / 2)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Activities",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall!
+                          .copyWith(fontWeight: FontWeight.w400, fontSize: 27,// color: Color(0xFFFFFFFF).withOpacity(0.8),
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Today",
-                            style: Theme.of(context)
-                                .textTheme
-                                .headlineSmall!
-                                .copyWith(fontWeight: FontWeight.w400, fontSize: 20, //color: Color(0xFFFFFFFF).withOpacity(0.8),
+                    ),
+                    InkWell(
+                      onTap: (){
+                        print("View All Button");
+                      },
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        //margin: EdgeInsets.symmetric(horizontal: kDefaultPadding / 2, ),
+                        //width: 65,
+                        //height: 65,
+                        decoration: BoxDecoration(
+                            color: const Color(0xFFF5F5F5),
+                            borderRadius: BorderRadius.circular(kDefaultPadding / 2)
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Today",
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headlineSmall!
+                                  .copyWith(fontWeight: FontWeight.w400, fontSize: 20, //color: Color(0xFFFFFFFF).withOpacity(0.8),
+                              ),
                             ),
-                          ),
-                          const SizedBox(width: 5,),
-                          Transform.rotate(
-                            angle: -1.6,
-                              child: const Icon(Icons.arrow_back_ios_new_outlined, size: 15,),
-                          )
-                        ],
+                            const SizedBox(width: 5,),
+                            Transform.rotate(
+                              angle: -1.6,
+                                child: const Icon(Icons.arrow_back_ios_new_outlined, size: 15,),
+                            )
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
               const SizedBox(height: kDefaultPadding,),
               Column(
@@ -224,7 +229,6 @@ class HomeBodyScreen extends StatelessWidget {
             ]
       ),
         ),
-    ),
     );
   }
 

@@ -51,8 +51,8 @@ class VisaCard extends StatelessWidget {
                           "Available Balance",
                           style: Theme.of(context)
                               .textTheme
-                              .headlineSmall!
-                              .copyWith(fontWeight: FontWeight.w400, fontSize: 27, color: Color(0xFFFFFFFF).withOpacity(0.8)),
+                              .titleLarge!
+                              .copyWith(fontWeight: FontWeight.w400, /*fontSize: 27,*/ color: Color(0xFFFFFFFF).withOpacity(0.8)),
                         ),
                         const SizedBox(height: 3,),
                         Text(
@@ -60,7 +60,7 @@ class VisaCard extends StatelessWidget {
                           style: Theme.of(context)
                               .textTheme
                               .headlineSmall!
-                              .copyWith(fontWeight: FontWeight.bold,fontSize: 30, color: Color(0xFFFFFFFF).withOpacity(0.8)),
+                              .copyWith(fontWeight: FontWeight.bold, /*fontSize: 30,*/ color: Color(0xFFFFFFFF).withOpacity(0.8)),
                         ),
                       ],
                     ),

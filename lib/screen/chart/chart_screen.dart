@@ -83,7 +83,7 @@ class _ProductDisplayScreenState extends State<ChartScreen>
                                   borderRadius: BorderRadius.circular(30),
                                   color: selectedValue == 0
                                       ? kBackgroundColor
-                                      : kGreyColor.withOpacity(0.8),
+                                      : kGrayColor.withOpacity(0.8),
                                   boxShadow: selectedValue == 0
                                       ? [
                                     BoxShadow(
@@ -106,7 +106,7 @@ class _ProductDisplayScreenState extends State<ChartScreen>
                                 borderRadius: BorderRadius.circular(30),
                                 color: selectedValue == 1
                                     ? kBackgroundColor
-                                    : kGreyColor.withOpacity(0.8),
+                                    : kGrayColor.withOpacity(0.8),
                                 /* boxShadow: selectedValue == 1
                                         ? [
                                       BoxShadow(
@@ -133,7 +133,7 @@ class _ProductDisplayScreenState extends State<ChartScreen>
                   style: Theme.of(context)
                       .textTheme
                       .headlineSmall!
-                      .copyWith(fontWeight: FontWeight.normal,fontSize: 33, color: Color(0xFF000000).withOpacity(0.8)),
+                      .copyWith(fontWeight: FontWeight.w500,fontSize: 33, color: Color(0xFF000000).withOpacity(0.8)),
                 ),
                 const SizedBox(height: kDefaultPadding * 0.25,),
                 Text(
@@ -162,7 +162,7 @@ class _ProductDisplayScreenState extends State<ChartScreen>
                           style: Theme.of(context)
                               .textTheme
                               .headlineSmall!
-                              .copyWith(fontWeight: FontWeight.normal,fontSize: 33, color: Color(0xFF000000).withOpacity(0.8)),
+                              .copyWith(fontWeight: FontWeight.normal,/*fontSize: 33,*/ color: Color(0xFF000000).withOpacity(0.8)),
                         ),
                         InkWell(
                           onTap: (){},
@@ -177,9 +177,7 @@ class _ProductDisplayScreenState extends State<ChartScreen>
                       ],
                     ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: kDefaultPadding, right: kDefaultPadding, bottom: kDefaultPadding),
-                  child: SingleChildScrollView(
+                SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
                     children: List.generate(
@@ -190,7 +188,6 @@ class _ProductDisplayScreenState extends State<ChartScreen>
                     ),
                   ),
                   ),
-                ),
         ]),),
     );
   }
